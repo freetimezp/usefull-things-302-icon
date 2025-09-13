@@ -9,3 +9,49 @@
 a {
     text-decoration: none;
 }
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #131313;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+ul li {
+    position: relative;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+ul li a {
+    font-size: 40px;
+    color: #fff;
+}
+
+ul li .text {
+    position: absolute;
+    width: 0;
+    left: 50%;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10px;
+    transition: 1s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+ul li:hover .text {
+    width: 120px;
+    margin-left: -60px;
+}
