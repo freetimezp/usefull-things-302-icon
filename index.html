@@ -12,32 +12,26 @@
     </head>
 
     <body>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <div class="text">facebook</div>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <div class="text">linkedin</div>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <div class="text">youtube</div>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <div class="text">instagram</div>
-            </li>
+        <canvas id="holo-canvas"></canvas>
+
+        <div class="holo-bg"></div>
+
+        <div class="hamburger" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="menu">
+            <li class="facebook"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i></li>
+            <li class="youtube"><i class="fa-brands fa-youtube"></i></li>
+            <li class="instagram"><i class="fa-brands fa-instagram"></i></li>
         </ul>
+
+        <h1 class="greeting">WELCOME TO THE FUTURE</h1>
+
+        <script src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
 
         <script src="./assets/js/main.js"></script>
     </body>
